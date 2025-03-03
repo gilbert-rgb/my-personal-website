@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color:#1b1e1d
+    background-color:#0f2e3d;
+    border: radius 70px; ;            
 }
 
 /* Header Styles */
@@ -15,16 +16,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #07242e;
     color: white;
     padding: 15px 30px;
     font-display: white;
+    border: radius 70px;  
+    animation:mymove 5s ease forwards; 
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: 700;
     color: white;
+    
 }
 
 nav {
@@ -35,9 +39,9 @@ nav {
 nav a {
     color: rgb(4, 147, 199);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 28px;
     transition: 0.3s;
-    font-weight: 500;
+    font-weight: 300;
     margin-left: 35px;
 }
 
@@ -50,13 +54,16 @@ nav a:hover, .active {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
-    background-color:#044667
-}
+    padding: 70px 10% 0;
+    background-color:#0f2e3d;
+    position: relative;
+}    
 
 .content-box {
     max-width: 50%;
-    
+    margin: 30px;
+    text-align: center;
+
 }
 
 .icon-box i {
@@ -64,13 +71,15 @@ nav a:hover, .active {
     margin: 30px 15px 10px 5px;
     cursor: pointer;
     transition: 0.3s;
-    display:inline-flex;
+    display: inline-block;
     width: 40px;
     height: 40px;
     border: 2px solid #00e5ff;
     border-radius: 20px;
     color: #00e5ff;
     text-decoration: none;
+    box-shadow: 20px;
+    justify-content: flex-end;
 }
 
 .icon-box i:hover {
@@ -78,23 +87,25 @@ nav a:hover, .active {
     background: #00e5ff;
     box-shadow: 0 0 20px #00fffb;
 }
-
+           
 .text-box h1 {
-    font-size: 36px;
-    margin-top: 10px;
-    min-height:90vh; 
+    font-size: 100px;
+    margin-top: 20px;
+    min-height:120vh; 
     font-weight: 700;
+    gap: 40px;
 }
 
 
 .skills {
     color: #ff6600;
     font-weight: bold;
+    
 }
 
 .text-box p {
-    font-size: 18px;
-    margin-bottom: 50px 0;
+    font-size: 30px;
+    margin: 90px;
     line-height: 30%;
 }
 
@@ -111,6 +122,7 @@ nav a:hover, .active {
     border-radius: 40px;
     display: inline-block;
     font-weight: 600;
+    margin: 50px; 
 }
 
 .btn:hover {
@@ -120,10 +132,21 @@ nav a:hover, .active {
 }
 
 img {
-    width:30%;
-    border-radius: 150px;
+    width:15%;
+    border-radius: 300px;
     background-color: #00c8ff;
-    box-shadow:10px 10px 10px;
-    border: 5px solid #00f7ff;
-    position: relative;
+    box-shadow:20px 40px 50px rgb(13, 252, 252);
+    border: 5px solid hsl(182, 60%, 17%);
+    border-right: 100px;
+    border-left: 100px;
+    align-items: center;
+    margin-left: 150px;
+    background-image: #01011ae1;
+                      
+}
+@keyframes mymove {
+    from {left: 0px}
+    to {left:200px}
+
+    
 }
